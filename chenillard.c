@@ -16,10 +16,6 @@ static struct proc_dir_entry *ensea_dir;
 static struct proc_dir_entry *speed_file;
 static struct proc_dir_entry *dir_file;
 
-#define DEVICE_NAME_LED "ensea-led"
-#define DEVICE_NAME_DIR "ensea/dir"
-
-
 static struct task_struct *chenillard_thread;
 static uint8_t led_state = 0x01;
 static int direction = 1; // 1 = gauche, 0 = droite
